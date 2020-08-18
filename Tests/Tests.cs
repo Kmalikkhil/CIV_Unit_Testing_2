@@ -11,7 +11,7 @@ namespace Tests
 
 
         //Instantiating Group1 object
-         GroupOneFunctions grp1 = new GroupOneFunctions();
+         GroupOneFunctions g1 = new GroupOneFunctions();
 
         //1.  Method receives the two sides of a Rectangle and return the area
 
@@ -23,8 +23,20 @@ namespace Tests
 
         public void CalcRectArea_Test(int expected, int length, int width)
         {
-            Assert.Equal(expected, grp1.CalcRectArea(length,width));
+            Assert.Equal(expected, g1.CalcRectArea(length,width));
         }
         
+
+        //2.  Checks if a number is a factorial
+
+        [Theory]
+        [InlineData(true,6)]
+        [InlineData(false,4)]
+
+        public void IsFactiorialNum_Test(bool expected, int num)
+        {
+            int Output = g1.IsFactiorialNum(num);
+            Assert.Equal(expected, Output);
+        }
     }
 }
