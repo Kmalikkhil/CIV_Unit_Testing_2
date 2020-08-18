@@ -72,16 +72,16 @@ namespace Tests
         [InlineData("Love Programming" , "Live Prigramming" , "i" , "o")]
         [InlineData("cat" , "cot" , "o" , "a")]
 
-        public void StringReplace_Test(string expected, string word, char value1, char value2)
+        public void StringReplace_Test(string expected, string word, char replaceChar, char replacement)
         {
-            Assert.Equal(expected, g1.StringReplace(word,value1,value2));
+            Assert.Equal(expected, g1.StringReplace(word,replaceChar,replacement));
         }
 
 
         //6.  Counts the number of times a character occurs in a string
 
         [Theory]
-        [InlineData(2,"o","Book")]
+        [InlineData(2,"Book","o")]
 
         public void CharCount_Test(int expected, string word, char countCharacter)
         {
