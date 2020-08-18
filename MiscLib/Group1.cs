@@ -6,6 +6,7 @@ namespace MiscLib
     {
         //---- Group 1 Functions ----------
         public int CalcRectArea(int length, int width) {
+            int Area = length * width;
             throw new NotImplementedException();
         }
 
