@@ -6,23 +6,48 @@ namespace MiscLib
     {
         //---- Group 2 Functions ----------
         public int CalcRectPerimeter(int length, int width) {
-            throw new NotImplementedException();
+            return (length + width) * 2;
         }
 
         public bool IsTriangularNum(int num) {
-            throw new NotImplementedException();
+            
+            long calc_num = 8*num+1;
+            long t = (long) Math.Sqrt(calc_num);
+            
+            if (t*t==calc_num) {
+                return true;
+            }
+                return false;
         }
 
         public int FarenheitToCelcius(int farenheit) {
-            throw new NotImplementedException();
+            
+            int celsius = (farenheit - 32) * 5 / 9;
+            return celsius;
         }
 
         public bool CheckWhiteSpace(string word) {
-            throw new NotImplementedException();
+            int numberOfSpaces = 0;
+            
+            for(int i = 0; i < word.Length; i++)
+            {
+                if(word[i] == ' ')
+                {
+                    numberOfSpaces++;
+                }
+                
+            }
+
+            if(numberOfSpaces >= 1){
+                return true;
+            }else
+            {
+                return false;
+            }
         }
 
         public string CamelString(string word) {
-            throw new NotImplementedException();
+            
         }
 
         public int CountDigits(string word) {
