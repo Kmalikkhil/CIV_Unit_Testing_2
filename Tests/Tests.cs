@@ -6,12 +6,15 @@ namespace Tests
 {
     public class MiscLibTests
     {   
-        /*
+        
         // Write Unit Tests for all functions for your assigned group
 
-        // GROUP 1
+
+        /*-----------------------------------------------------------------------------
+        GROUP 1
+        -----------------------------------------------------------------------------*/
         
-        
+        /*
         //Instantiating Group1 object
          GroupOneFunctions g1 = new GroupOneFunctions();
 
@@ -92,7 +95,10 @@ namespace Tests
         
         */
            
-           // GROUP 2
+           
+        /*-----------------------------------------------------------------------------
+        GROUP 2
+        -----------------------------------------------------------------------------*/
     
         
         GroupTwoFunctions msclib = new GroupTwoFunctions();
@@ -156,7 +162,7 @@ namespace Tests
             var result = msclib.CamelString(userInput);
             Assert.Equal(expected, result);
         }    
-        /*
+        
         [Theory]
         [InlineData(4, "1123")]
         [InlineData(10, "2398473456")]
@@ -165,10 +171,10 @@ namespace Tests
         public void CountDigits(int expected, string input)
         {
             
-            var result = msclib.CountDigits(userInput);
+            var result = msclib.CountDigits(input);
             Assert.Equal(expected, result);
         }     
         
-        */
+        
     }
 }

@@ -47,11 +47,41 @@ namespace MiscLib
         }
 
         public string CamelString(string word) {
+
+            string ConvertWord = string.Empty;
+            for (int i = 0; i < word.Length; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    ConvertWord = ConvertWord + word[i].ToString().ToUpper();
+                }
+                else
+                {
+                    ConvertWord = ConvertWord + word[i].ToString().ToLower();
+                }
+            }
+            
+            return ConvertWord;
             
         }
 
         public int CountDigits(string word) {
-            throw new NotImplementedException();
+
+            int i = 0;
+            int l = word.Length;
+            int digit = 0;
+
+            while(i<l)
+            {
+                if(word[i] >= '0' && word[i] <= '9' ) {
+                    digit++;
+                }
+
+                i++;
+            }
+
+            return digit;
+            
         }
 
         
