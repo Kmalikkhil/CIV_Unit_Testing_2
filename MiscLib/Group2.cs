@@ -21,8 +21,11 @@ namespace MiscLib
         }
 
         public int FarenheitToCelcius(int farenheit) {
-            
-            int celsius = (farenheit - 32) * 5 / 9;
+
+            double Degree = Convert.ToDouble(farenheit);
+            double Result = (Degree - 32) * / 9;
+            Result = Math.Round(Result);
+            int celsius = Convert.ToInt32(Result);
             return celsius;
         }
 
